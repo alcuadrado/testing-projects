@@ -24,7 +24,7 @@ body:
       placeholder: Tell us what you wanted to see instead!
     validations:
       required: true
-  
+
   - type: textarea
     id: reproduction
     attributes:
@@ -75,4 +75,3 @@ body:
     id: extra
     attributes:
       label: Add any extra info you think is relevant or could be helpful
-  
