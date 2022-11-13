@@ -1,2 +1,1 @@
-# testing-projects
-Para probar cositas
+Random experiments with Github Projects
