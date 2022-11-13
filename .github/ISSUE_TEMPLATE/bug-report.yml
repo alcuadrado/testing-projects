@@ -6,6 +6,8 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+        
+        Please provide as much information as possible. The more we know about your problem and setup, the easier it is for us to help you!
 
   - type: textarea
     id: what-happened
@@ -42,6 +44,14 @@ body:
     attributes:
       label: Hardhat version
       description: "Please pase the output of `npx hardhat --version`"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating Sytem and version
+      description: "Which operating system and version are you using?"
     validations:
       required: true
 
