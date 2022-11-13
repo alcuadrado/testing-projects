@@ -1,0 +1,20 @@
+name: Add issues to the project
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    name: Add issue to the project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@RELEASE_VERSION
+        with:
+          project-url: https://github.com/users/alcuadrado/projects/1/views/1
+      - name: Label issues # unofficial action used by Github in its docs
+        uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
+        with:
+          add-labels: "unconfirmed"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
