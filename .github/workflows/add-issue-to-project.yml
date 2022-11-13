@@ -10,7 +10,7 @@ jobs:
     name: Add issue to the project
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@RELEASE_VERSION
+      - uses: actions/add-to-project@v0.3.0
         with:
           project-url: https://github.com/users/alcuadrado/projects/1/views/1
       - name: Label issues # unofficial action used by Github in its docs
