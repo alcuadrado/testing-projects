@@ -1,7 +1,6 @@
 name: Bug Report
 description: File a bug report
-title: "[Bug]: "
-labels: ["bug"]
+labels: ["bug", "unconfirmed"]
 body:
   - type: markdown
     attributes:
@@ -26,11 +25,27 @@ body:
     validations:
       required: true
   
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How can we reproduce your problem?
+      description: Add a list of steps or a link to a repository to reproduce your issues.
+    validations:
+      required: true
+
   - type: input
     id: hh-version
     attributes:
       label: Hardhat version
       description: "Please pase the output of `npx hardhat --version`"
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js version
+      description: "Please pase the output of `node --version`"
     validations:
       required: true
 
@@ -55,4 +70,9 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output.
       render: shell
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Add any extra info you think is relevant or could be helpful
   
