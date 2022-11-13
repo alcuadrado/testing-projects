@@ -30,6 +30,10 @@ body:
     attributes:
       label: How can we reproduce your problem?
       description: Add a list of steps or a link to a repository to reproduce your issues.
+      placeholder: |
+        Providing a link a repository that reproduces the bug increases the changes that your problem gets solved fast.
+
+        If it's a repository you use to work, don't forget to link the exact commit.
     validations:
       required: true
 
