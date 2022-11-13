@@ -1,0 +1,58 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Please describe what went wrong
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-should-happen
+    attributes:
+      label: What should happen?
+      description: Also tell us, what did you expected to happen?
+      placeholder: Tell us what you wanted to see instead!
+    validations:
+      required: true
+  
+  - type: input
+    id: hh-version
+    attributes:
+      label: Hardhat version
+      description: "Please pase the output of `npx hardhat --version`"
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js version
+      description: "Please pase the output of `node --version`"
+    validations:
+      required: true
+
+  - type: textarea
+    id: config
+    attributes:
+      label: Your hardhat config
+      description: Please copy and paste your Hardhat config. If you need to keep it private, please post the section that imports your plugins.
+      render: js
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output.
+      render: shell
+  
